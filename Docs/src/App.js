@@ -1,12 +1,20 @@
-import { people } from "./data.js";
-import { getImageUrl } from "./utils.js";
+import Profile from "./Profile.js";
 
-export default function List() {
-  const listItems = people.map(person =>
-    <Fragment key={person.id}>
-      <h1>{person.name}</h1>
-      <p>{person.bio}</p>
-    </Fragment>
+export default function App() {
+  return (
+    <>
+      <Profile
+        person={{
+          imageId: "lrWQx8l",
+          name: "Subrahmanyan Chandrasekhar",
+        }}
+      />
+      <Profile
+        person={{
+          imageId: "MK3eW3A",
+          name: "Creola Katherine Johnson",
+        }}
+      />
+    </>
   );
-  return <ul>{listItems}</ul>;
 }
