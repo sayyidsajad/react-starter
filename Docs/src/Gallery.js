@@ -21,7 +21,7 @@ export default function Form() {
         </select>
       </label>
       <textarea
-        placeholder="Message"
+        placeholder="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
