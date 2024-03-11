@@ -1,5 +1,5 @@
-import Gallery from './Gallery.js';
+import App from './App';
 import { createRoot } from 'react-dom/client';
 
 const root = createRoot(document.getElementById('root'))
-root.render(<Gallery />);
+root.render(<App />);
