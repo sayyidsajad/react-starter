@@ -12,8 +12,10 @@
     "immer": "^10.0.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.0",
+    "use-immer": "^0.9.0"
   },
+  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",

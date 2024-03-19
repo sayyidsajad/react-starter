@@ -27,29 +27,21 @@ export default function Form() {
 
   return (
     <>
-      <h2>City quiz</h2>
-      <p>
-        In which city is there a billboard that turns air into drinkable water?
-      </p>
-      <form onSubmit={handleSubmit}>
-        <textarea
-          value={answer}
-          onChange={handleTextareaChange}
-          disabled={status === 'submitting'}
-        />
-        <br />
-        <button disabled={
-          answer.length === 0 ||
-          status === 'submitting'
-        }>
-          Submit
-        </button>
-        {error !== null &&
-          <p className="Error">
-            {error.message}
-          </p>
-        }
-      </form>
+      <div className="board-row">
+        <Square value={squares[0]} onSquareClick={handleClick(0)} />
+        <Square value={squares[1]} onSquareClick={handleClick} />
+        <Square value={squares[2]} onSquareClick={handleClick} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[3]} onSquareClick={handleClick} />
+        <Square value={squares[4]} onSquareClick={handleClick} />
+        <Square value={squares[5]} onSquareClick={handleClick} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[6]} onSquareClick={handleClick} />
+        <Square value={squares[7]} onSquareClick={handleClick} />
+        <Square value={squares[8]} onSquareClick={handleClick} />
+      </div>
     </>
   );
 }
